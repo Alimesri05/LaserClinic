@@ -1,0 +1,184 @@
+.service-detail-hero {
+        min-height: 50vh;
+        background: linear-gradient(135deg, #0B2B5E 0%, #1E3E6E 100%);
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+    .service-detail-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="rgba(255,255,255,0.03)" d="M100 0L200 100L100 200L0 100Z"/></svg>') repeat;
+        opacity: 0.3;
+    }
+    .service-detail-content {
+        padding: 4rem 0;
+    }
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    @media (min-width: 768px) {
+        .info-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .info-card {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .info-card:hover {
+        transform: translateY(-5px);
+        border-color: #3A86FF;
+        box-shadow: 0 20px 25px -12px rgba(0,0,0,0.15);
+    }
+    .info-card i {
+        font-size: 2rem;
+        color: #0B2B5E;
+        margin-bottom: 1rem;
+    }
+    .info-card h3 {
+        color: #1A2A3A;
+    }
+    .info-card p {
+        color: #6C757D;
+    }
+    .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: transparent;
+        color: #3A86FF;
+        padding: 0.5rem 0;
+        border: none;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 1.5rem;
+    }
+    .back-btn i {
+        transition: transform 0.3s ease;
+    }
+    .back-btn:hover {
+        color: #A8D0FF;
+        transform: translateX(-8px);
+    }
+    .back-btn:hover i {
+        transform: translateX(-5px);
+    }
+    .procedure-steps {
+        list-style: none;
+        padding: 0;
+    }
+    .procedure-steps li {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: #F8F9FA;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+    }
+    .procedure-steps li:hover {
+        transform: translateX(8px);
+        background-color: white;
+        border-color: #3A86FF;
+    }
+    .procedure-steps li .step-num {
+        width: 30px;
+        height: 30px;
+        background: #0B2B5E;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .procedure-steps li strong {
+        color: #1A2A3A;
+    }
+    .procedure-steps li div {
+        color: #6C757D;
+    }
+    .price-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid #e5e7eb;
+    }
+    .price-table th, .price-table td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .price-table th {
+        background: #0B2B5E;
+        color: white;
+        font-weight: 600;
+    }
+    .price-table td {
+        color: #6C757D;
+    }
+    .price-table tr:hover td {
+        background-color: #F8F9FA;
+        color: #1A2A3A;
+    }
+    .note-box {
+        background-color: rgba(58,134,255,0.1);
+        padding: 1rem;
+        border-radius: 0.75rem;
+        margin-top: 1rem;
+        color: #3A86FF;
+        border-left: 3px solid #3A86FF;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    hr {
+        margin: 3rem 0;
+        border: none;
+        border-top: 1px solid #e5e7eb;
+    }
+    .cta-box {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, #0B2B5E 0%, #071D42 100%);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+    }
+    .cta-box:hover {
+        transform: scale(1.02);
+        box-shadow: 0 20px 30px -15px rgba(0,0,0,0.2);
+    }
+    .cta-box h3 {
+        color: white;
+    }
+    .cta-box .btn-primary {
+        background-color: #3A86FF;
+        color: white;
+    }
+    .cta-box .btn-primary:hover {
+        background-color: #6AA5FF;
+        color: white;
+    }
